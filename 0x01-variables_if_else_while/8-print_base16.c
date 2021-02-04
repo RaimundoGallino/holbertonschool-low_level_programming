@@ -13,12 +13,17 @@
 int main(void)
 {
 /* your code goes there */
-	char ch = 'z';
+	char ch;
+	char ch1;
 
-	for (; ch <= 'a' ; ch--)
+	for (ch = '0'; ch <= '9' ; ch++)
 	{
 		putchar(ch);
 	}
+	for (ch1 = 'a'; ch1 <= 'f' ; ch1++)
+        {
+                putchar(ch1);
+        }
 
 	putchar('\n');
 
