@@ -21,9 +21,9 @@ int main(void)
 		putchar(ch);
 	}
 	for (ch1 = 'a'; ch1 <= 'f' ; ch1++)
-        {
-                putchar(ch1);
-        }
+	{
+		putchar(ch1);
+	}
 
 	putchar('\n');
 
