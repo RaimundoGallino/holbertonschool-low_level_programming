@@ -13,9 +13,9 @@
 int main(void)
 {
 /* your code goes there */
-	char ch = 'z';
+	char ch;
 
-	for (; ch <= 'a' ; ch--)
+	for (ch = 'z'; ch >= 'a' ; ch--)
 	{
 		putchar(ch);
 	}
