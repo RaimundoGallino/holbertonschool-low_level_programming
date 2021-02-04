@@ -12,11 +12,12 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-int n, LastDigit;
+int n, lastDigit;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-/* your code goes there */
+
+
 lastDigit = n % 10;
 
 printf("%d Last digit of", n);
