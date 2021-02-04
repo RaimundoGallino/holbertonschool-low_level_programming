@@ -1,4 +1,4 @@
-include <stdlib.h>
+#include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
@@ -13,17 +13,17 @@ include <stdlib.h>
 int main(void)
 {
 /* your code goes there */
-	char ch = 'a';
-	char ch1 = 'A';
-	for (; ch <= 'z' ; ch++)
-	{
-		putchar(ch);
-	}
-	for (; ch1 <= 'Z' ; ch1++)
-        {
-                putchar(ch);
-        }
-	putchar('\n');
+char ch = 'a';
 
-	return (0);
+for (; ch <= 'z' ; ch++)
+{
+putchar(ch);
+}
+for (; ch1 <= 'Z' ; ch1++)
+{
+putchar(ch1);
+}
+putchar('\n');
+
+return (0);
 }
