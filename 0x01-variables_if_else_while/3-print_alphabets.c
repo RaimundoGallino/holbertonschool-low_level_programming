@@ -14,7 +14,7 @@ int main(void)
 {
 /* your code goes there */
 char ch = 'a';
-
+char ch1 = 'A';
 for (; ch <= 'z' ; ch++)
 {
 putchar(ch);
