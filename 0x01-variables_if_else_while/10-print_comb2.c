@@ -13,7 +13,7 @@ int main(void)
 {
 /* your code goes there */
 	int n;
-	int n1
+	int n1;
 
 	for (n = '0'; n <= '9' ; n++)
 	{
