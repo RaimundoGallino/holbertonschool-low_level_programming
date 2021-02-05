@@ -1,4 +1,4 @@
-#include <stdio.h>
+0;10;1c#include <stdio.h>
 
 /**
  * main - Entry point
@@ -30,6 +30,6 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n')
+	putchar('\n');
 	return (0);
 }
