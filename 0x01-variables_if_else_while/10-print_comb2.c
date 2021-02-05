@@ -19,16 +19,15 @@ int main(void)
 
 	for (n = '0'; n <= '9' ; n++)
 	{
-		putchar(n);
 		for (n1 = '0'; n1 <= '9' ; n1++)
 		{
+			putchar(n);
 			putchar(n1);
 			if (n != '9' || n1 != '9')
 			{
 				putchar(',');
 				putchar(' ');
 			}
-
 		}
 
 	}
