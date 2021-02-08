@@ -1,0 +1,1 @@
+Exploring the creation of header files in C. Adding parameters and variables.
