@@ -1,11 +1,10 @@
-#include <unistd.h>
 #include "holberton.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * print_sign - prints the sign of a number
+ * @n: The integer to print
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: positive 1.
+ * negative, -1 is returned, and errno is set appropriately.
  */
 
 int print_sign(int n)
