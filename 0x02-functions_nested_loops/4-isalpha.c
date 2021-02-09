@@ -1,11 +1,10 @@
-#include <unistd.h>
 #include "holberton.h"
 /**
- * _putchar - writes the character c to stdout
+ * _isalpha - checks for alphabetic character
  * @c: The character to print
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 1 if c is a letter.
+ *
  */
 
 int _isalpha(int c)
