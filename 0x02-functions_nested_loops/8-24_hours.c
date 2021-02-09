@@ -30,9 +30,8 @@ void jack_bauer(void)
 					_putchar('\n');
 
 					if (n1 == '2' && n2 == '3' && n3 == '5' && n4 == '9')
-					{
+
 						goto end;
-					}
 
 				}
 
