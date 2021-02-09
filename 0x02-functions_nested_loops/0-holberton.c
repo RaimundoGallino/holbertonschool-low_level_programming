@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * main - writes the character c to stdout
- * The character to print
+ * main - entry point
+ *
  *
  * Return: On success 0.
- * On error, -1 is returned, and errno is set appropriately.
+ *
  */
 
 int main(void)
