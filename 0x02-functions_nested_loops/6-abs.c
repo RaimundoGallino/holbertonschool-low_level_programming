@@ -1,11 +1,10 @@
-#include <unistd.h>
 #include "holberton.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _abs - returns the absolute value of n
+ * @n: the number to be computed
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: -n when is negative and n when is positive
+ *
  */
 
 int _abs(int n)
