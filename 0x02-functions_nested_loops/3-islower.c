@@ -1,11 +1,10 @@
-#include <unistd.h>
 #include "holberton.h"
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * _islower - checks for lowercase character
+ * @c: The character to check
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: 0 is lowercase.
+ *
  */
 
 int _islower(int c)
