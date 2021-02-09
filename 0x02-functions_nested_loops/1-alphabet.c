@@ -1,11 +1,10 @@
-#include <stdio.h>
 #include "holberton.h"
 /* betty style doc for function main goes there */
 
 /**
- * main - Entry point
+ * print_alphabet - prints the alphabet in lowercase
  *
- * Return: Always 0 (Success)
+ *
  */
 
 void print_alphabet(void)
@@ -19,5 +18,4 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 
-	
 }
