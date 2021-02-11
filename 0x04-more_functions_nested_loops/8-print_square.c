@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- *  print_diagonal - print a piramide
+ *  print_square - print a square
  *
- * @n: number of lines
+ * @size: size number
  * Return: 1 if c is a letter.
  *
  */
