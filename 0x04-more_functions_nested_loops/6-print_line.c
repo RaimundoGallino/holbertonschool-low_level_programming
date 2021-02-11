@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *  - print numbers from 0 to 9 exept 2 and 4
+ *  print_line - print number of lines you indicate
  *
  *
  * Return: 1 if c is a letter.
