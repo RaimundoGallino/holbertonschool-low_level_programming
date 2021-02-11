@@ -2,7 +2,7 @@
 /**
  *  print_line - print number of lines you indicate
  *
- *
+ * @n: number of lines
  * Return: 1 if c is a letter.
  *
  */
