@@ -9,18 +9,18 @@
 
 void print_most_numbers(void)
 {
-	int a = '0';
+	int a = 0;
 
-	while (a <= '9')
+	while (a <= 9)
 	{
-		if (a == '1' || a == '3')
+		if (a == 1 || a == 3)
 		{
 			a = a + 1;
 		}
 		else
 		{
 			a++;
-			_putchar(a);
+			_putchar(a + '0');
 		}
 
 	}
