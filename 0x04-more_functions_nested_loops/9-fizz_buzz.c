@@ -17,18 +17,17 @@ int main(void)
 	{
 		m3 = n % 3;
 		m5 = n % 5;
-
-		if (m3 == 0)
+		if (m3 == 0 && m5 == 0)
 		{
-			printf("Fizz");
+			printf("FizzBuzz");
 		}
 		else if (m5 == 0)
 		{
 			printf("Buzz");
 		}
-		else if (m3 == 0 && m5 == 0)
+		else if (m3 == 0)
 		{
-			printf("FizzBuzz");
+			printf("Fizz");
 		}
 		else
 		{
