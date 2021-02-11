@@ -13,17 +13,17 @@ void print_most_numbers(void)
 
 	while (a <= 9)
 	{
-		if (a == 1 || a == 3)
+		if (a == 2 || a == 4)
 		{
 			a = a + 1;
 		}
 		else
 		{
-			a++;
 			_putchar(a + '0');
+			a++;
 		}
 
 	}
-	_putchar(10);
+	_putchar('\n');
 
 }
