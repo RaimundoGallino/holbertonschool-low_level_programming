@@ -1,0 +1,1 @@
+More loop based functions on C. Doing what <stdio.h> does.
