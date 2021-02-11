@@ -10,7 +10,7 @@ void print_diagonal(int n)
 {
 	int sp, sk;
 
-	if (n != 0)
+	if (n > 0)
 	{
 		for (sk = 0; sk < n; sk++)
 		{
@@ -26,7 +26,7 @@ void print_diagonal(int n)
 
 
 	}
-	else if (n < 0)
+	else
 	{
 		_putchar(10);
 	}
