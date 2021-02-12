@@ -9,23 +9,27 @@
  */
 void print_triangle(int size)
 {
-	int y;
-	int x;
-
-	for (y = 0; y < size; y++)
+	if (size > 0)
 	{
-		for (x = 0; x < size; x++)
+		for (y = 0; y < size; y++)
 		{
-			if (x >= size - 1 - y)
+			for (x = 0; x < size; x++)
 			{
-				printf("#");
+				if (x >= size -1 -y)
+				{
+					printf("#");
+				}
+				else
+				{
+					printf(" ");
+				}
 			}
-			else
-			{
-				printf(" ");
-			}
+			putchar(10);
 		}
-		_putchar(10);
+	}
+	else
+	{
+		putchar(10);
 	}
 
 }
