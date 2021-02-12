@@ -20,19 +20,19 @@ void print_triangle(int size)
 			{
 				if (x >= size - 1 - y)
 				{
-					printf("#");
+					_putchar(35);
 				}
 				else
 				{
-					printf(" ");
+					_putchar(' ');
 				}
 			}
-			putchar(10);
+			_putchar(10);
 		}
 	}
 	else
 	{
-		putchar(10);
+		_putchar(10);
 	}
 
 }
