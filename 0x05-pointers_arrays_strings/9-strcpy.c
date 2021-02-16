@@ -2,9 +2,11 @@
 
 /**
  * *_strcpy - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * @dest: save the copied string
+ * @src: the string to be copied
+ * Return: the saved string --> dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	char *saved = dest;
