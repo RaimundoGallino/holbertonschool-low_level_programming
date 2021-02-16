@@ -1,19 +1,28 @@
 #include "holberton.h"
-#include "_putchar.c"
 #include "2-strlen.c"
+
 /**
  * rev_string - prints a srting, in reverse..
  *
- * @*s: pointer to the string.
+ * @s: pointer to the string.
  */
+
 void rev_string(char *s)
 {
 	int len, i;
-	len = _strlen(s);
+	char *start, *end, temp;
 
-	for(i = len; i >= 0; i--)
+	len = _strlen(s);
+	start = s;
+	end = s + len - 1;
+
+	for (i = 0; i < len / 2; i++)
 	{
-		_putchar(*(s+i));
+		temp = *end;
+		*end = *start;
+		*start = temp;
+
+		start++;
+		end--;
 	}
-	_putchar(10);
 }
