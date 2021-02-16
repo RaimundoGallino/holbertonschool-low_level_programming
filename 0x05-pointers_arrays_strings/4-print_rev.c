@@ -4,10 +4,10 @@
 /**
  * print_rev - prints a srting, in reverse..
  *
- * @*s: pointer to the string.
+ * @s: pointer to the string.
  */
 
-void print_rev (char *s)
+void print_rev(char *s)
 {
 	int len, i;
 
