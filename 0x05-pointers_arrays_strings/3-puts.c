@@ -1,13 +1,14 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * _puts - prints the string that the pointer is referencing
  *
- * Return: Always 0.
+ * @str: - pointer to the string to print
+ * Return: the string
  */
 void _puts(char *str)
 {
-	while(*str)
+	while (*str)
 	{
 		_putchar(*str);
 		str++;
