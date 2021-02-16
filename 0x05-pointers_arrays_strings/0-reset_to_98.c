@@ -3,7 +3,7 @@
 /**
  * reset_to_98 - reset the value to 98 becoause you are aderessing the value
  * the value of the int given to the function
- * @*n: ponter reference
+ * @n: ponter reference
  * Return: 1 if c is a letter.
  *
  */
