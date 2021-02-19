@@ -1,9 +1,11 @@
 #include "holberton.h"
 /**
- *
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _strncat - conctatenates two strings, with an specific
+ * number to print the second string.
+ * @dest: first string to concatenate
+ * @src: string to concatenate after the first one
+ * @n: total characters to print
+ *  Return: the concatenated string.
  */
 char *_strncat(char *dest, char *src, int n)
 {
@@ -18,7 +20,7 @@ char *_strncat(char *dest, char *src, int n)
 		c++;
 	}
 
-	while(src[c1] != '\0' && c1 < n)
+	while (src[c1] != '\0' && c1 < n)
 	{
 		dest[c] = src[c1];
 		c++;
@@ -26,5 +28,5 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	saved = dest;
 
-	return(saved);
+	return (saved);
 }
