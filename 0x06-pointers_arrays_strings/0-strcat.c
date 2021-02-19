@@ -3,6 +3,8 @@
 /**
  * _strcat - conctatenates two strings.
  *
+ * @dest: first string to concatenate
+ * @src: string to concatenate after the first one
  * Return: the concatenated string.
  */
 
@@ -11,7 +13,8 @@ char *_strcat(char *dest, char *src)
 	char *saved;
 	int c, c1;
 
-	while (dest[c] != '\0'){
+	while (dest[c] != '\0')
+	{
 		c++;
 	}
 
@@ -21,7 +24,8 @@ char *_strcat(char *dest, char *src)
 		c++;
 		c1++;
 	}
+
 	saved = dest;
 
-	return(saved);
+	return (saved);
 }
