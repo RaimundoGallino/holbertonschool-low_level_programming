@@ -2,8 +2,8 @@
 
 /**
  * cap_string - capitalizes the firstletter of the word
- * @s: char
- * Return: Always 0.
+ * @s: sting to be capitalized
+ * Return: string.
  */
 
 char *cap_string(char *s)
@@ -14,7 +14,7 @@ char *cap_string(char *s)
 
 	if (s[i] >= 'a' && s[i] <= 'z')
 	{
-		s[i++] = s[i] - 32;
+		s[i] = s[i] - 32;
 	}
 
 	while (s[i] != '\0')
