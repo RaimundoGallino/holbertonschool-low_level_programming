@@ -1,0 +1,40 @@
+#include "holberton.h"
+
+/**
+ * cap_string - capitalizes the firstletter of the word
+ * @s: char
+ * Return: Always 0.
+ */
+
+char *cap_string(char *s)
+{
+
+	int i = 0, j = 0;
+	char sym[] = { ',', ';', '.', '!', '?', '"', '(', ')', '{', '}', 32, '\0'};
+
+	if (s[i] >= 'a' && s[i] <= 'z')
+	{
+		s[i++] = s[i] - 32;
+	}
+
+	while (s[i] != '\0')
+	{
+		if (s[i] >= 'a' && s[i] <= 'z')
+		{
+			while (sym[j] != '\0')
+			{
+
+				if (s[i - 1] == sym[j])
+				{
+					s[i] = s[i] - 32;
+				}
+
+				j++;
+			}
+		}
+		j = 0;
+		i++;
+	}
+
+	return (s);
+}
