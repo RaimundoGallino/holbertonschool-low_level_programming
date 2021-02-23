@@ -8,7 +8,6 @@
  */
 char *_strchr(char *s, char c)
 {
-	int c1 = 0;
 	char *r = s;
 
 	while (*r != c && *r != '\0')
