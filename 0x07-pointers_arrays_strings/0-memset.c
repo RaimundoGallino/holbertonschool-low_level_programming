@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _memst - fills memory with a constant value
+ * _memset - fills memory with a constant value
  * @s: pointer to an array
  * @b: constant char
  * @n: numbers of the constante value repetitions
