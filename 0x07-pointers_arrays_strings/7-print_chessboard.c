@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * print_chessboard - print a chesscoard
+ * @a: array to be printed
+ *
+ * Return: byte number of the characters tat match
+ */
+
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
