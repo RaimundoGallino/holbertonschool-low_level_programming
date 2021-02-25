@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_chessboard - print a chesscoard
+ * print_chessboard - print a  chesscoard
  * @a: array to be printed
  *
  * Return: byte number of the characters tat match
