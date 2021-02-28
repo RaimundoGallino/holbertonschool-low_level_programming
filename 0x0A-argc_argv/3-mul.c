@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * main - entry point
+ * @argc: number of arguments passed
+ * @argv: array of pointers pointing to these arguments
+ * Return: 0 succes
  */
+
 int main(int argc, char* argv[])
 {
 	int i, mul = 1;
