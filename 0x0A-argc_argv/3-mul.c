@@ -8,7 +8,7 @@
  * Return: 0 succes
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i, mul = 1;
 
@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 	else
 	{
 		printf("Error\n");
-		return(1);
+		return (1);
 	}
-        return(0);
+	return (0);
 }

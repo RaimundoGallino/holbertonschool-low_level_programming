@@ -8,7 +8,7 @@
  * Return: 0 succes
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
@@ -23,11 +23,11 @@ int main(int argc, char* argv[])
 			if (*ch != '\0')
 			{
 				printf("Error\n");
-				return(1);
+				return (1);
 			}
 		}
 		printf("%d\n", sum);
 	}
 
-	return(0);
+	return (0);
 }
