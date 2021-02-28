@@ -14,22 +14,21 @@ int main(int argc, char *argv[])
 
 	sum = 0;
 
-	if (argc > 1)
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
+		char *ch;
+		int neg;
+
+		neg = strtol(argv[i], &ch, 10);
+
+		if (*ch != '\0' || neg < 0)
 		{
-			char *ch;
-
-			sum += strtol(argv[i], &ch, 10);
-
-			if (*ch != '\0')
-			{
-				printf("Error\n");
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
-		printf("%d\n", sum);
+		sum += neg;
 	}
+	printf("%d\n", sum);
 
 	return (0);
 }
