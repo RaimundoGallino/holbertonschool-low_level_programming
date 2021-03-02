@@ -13,7 +13,12 @@
 char *_strcat(char *dest, char *src)
 {
 	char *saved;
-	int c, c1;
+	int c = 0, c1 = 0;
+
+	if (src == '\0')
+	{
+		return (dest);
+	}
 
 	while (dest[c] != '\0')
 	{
@@ -42,6 +47,9 @@ int _strlen(char *s)
 {
 	int str = 0;
 
+	if (s == '\0')
+		return (0);
+
 	while (s[str] != '\0')
 	{
 		str++;
@@ -61,19 +69,14 @@ char *str_concat(char *s1, char *s2)
 {
 	char *str;
 
-	str = malloc(sizeof(char) * (((strlen(s1) + 1) + ((strlen(s2) + 1)))));
+	str = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2) + 1));
 
 	if (str == NULL)
 		return (NULL);
-
+	str[0] = '\0';
 	str = _strcat(str, s1);
 	str = _strcat(str, s2);
 
-	if (s1 == NULL)
-		return (NULL);
-
-	if (s2 == NULL)
-		return (NULL);
 
 	return (str);
 }
