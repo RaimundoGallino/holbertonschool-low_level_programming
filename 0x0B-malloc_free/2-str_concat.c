@@ -44,13 +44,13 @@ char *str_concat(char *s1, char *s2)
 {
 	char *str;
 
-	str = malloc(sizeof(char) * (strlen(s1) + strlen(s2)));
+	str = malloc(sizeof(char) * (_strlen(s1) + _strlen(s2)));
 
 	if (str == NULL)
 		return(NULL);
 
-	str = strcat(str, s1);
-	str = strcat(str, s2);
+	str = _strcat(str, s1);
+	str = _strcat(str, s2);
 
 	if (s1 == NULL)
 		return(NULL);
