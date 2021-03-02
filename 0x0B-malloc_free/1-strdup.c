@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	char *str2;
 	unsigned int i, n;
 
-	if (str2 == NULL)
+	if (str == NULL)
                 return (NULL);
 
 	n = _strlen(str) + 1;
