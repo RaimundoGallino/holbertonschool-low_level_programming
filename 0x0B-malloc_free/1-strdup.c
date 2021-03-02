@@ -35,10 +35,10 @@ char *_strdup(char *str)
 
 	n = _strlen(str) + 1;
 
-	if (str2 == NULL)
-		return (NULL);
-
 	str2 = malloc(sizeof(char) * n);
+
+	if (str2 == NULL)
+                return (NULL);
 
 	for (i = 0; i < n; i++)
 		str2[i] = str[i];
