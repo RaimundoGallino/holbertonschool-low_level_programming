@@ -31,14 +31,14 @@ char *_strdup(char *str)
 	unsigned int i, n;
 
 	if (str == NULL)
-                return (NULL);
+		return (NULL);
 
 	n = _strlen(str) + 1;
 
 	str2 = malloc(sizeof(char) * n);
 
 	if (str2 == NULL)
-                return (NULL);
+		return (NULL);
 
 	for (i = 0; i < n; i++)
 		str2[i] = str[i];
