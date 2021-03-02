@@ -31,6 +31,23 @@ char *_strcat(char *dest, char *src)
 
 	return (saved);
 }
+/**
+ * _strlen - displays the number of characters of a string
+ *
+ * @s: pointer to the string.
+ * Return: length of the string
+ */
+
+int _strlen(char *s)
+{
+	int str = 0;
+
+	while (s[str] != '\0')
+	{
+		str++;
+	}
+	return (str);
+}
 
 /**
  * str_concat - copies a string to a new memory location
