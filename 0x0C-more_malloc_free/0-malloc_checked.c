@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /**
+ * malloc_checked - writes a function that allocates memory using malloc
  * @b: integer of the size of the malloc
  *
  * Return: Always 0.
