@@ -12,23 +12,23 @@
 
 int *array_range(int min, int max)
 {
-	int i, j;
+	int i, dif;
 	int *p;
 
 	if (min > max)
 		return (NULL);
 
-	p = malloc(sizeof(int) * (max - min) + 1);
+	dif = (max - min) + 1;
+
+	p = malloc(sizeof(int) * dif);
 
 	if (p == NULL)
 		return (NULL);
 
-	j = min;
 
-	for (i = 0; i < ((max - min) + 1); i++)
+	for (i = 0; i < dif; i++, min++)
 	{
-		p[i] = j;
-		j++;
+		p[i] = min;
 	}
 
 	return (p);
