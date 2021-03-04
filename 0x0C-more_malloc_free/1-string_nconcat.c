@@ -25,9 +25,9 @@ int _strlen(char *s)
 
 /**
  * string_nconcat - concatenates two strings
- * @s1:
- * @s2:
- * @n:
+ * @s1: first string to copy
+ * @s2: second string to copy
+ * @n: number of the second string to print
  *
  * Return: Always 0.
  */
