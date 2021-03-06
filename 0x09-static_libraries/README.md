@@ -1,4 +1,4 @@
-This directory contains the resources to makea static librery with this functions:
+This directory contains the resources to make a static librery with this functions:
 ----------------------------------------------------------------------------------
 int _putchar(char c);
 int _islower(int c);
