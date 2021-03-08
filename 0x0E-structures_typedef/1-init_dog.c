@@ -1,3 +1,4 @@
+#include "dog.h"
 /**
  * init_dog - check the code for Holberton School students.
  * @d: the dog structure defined before
@@ -11,5 +12,5 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	struct dog *dog;
 
-	return (0);
+	return dog;
 }
