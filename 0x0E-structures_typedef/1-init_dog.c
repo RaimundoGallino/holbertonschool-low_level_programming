@@ -1,4 +1,6 @@
 #include "dog.h"
+#include <stdlib.h>
+
 /**
  * init_dog - check the code for Holberton School students.
  * @d: the dog structure defined before
@@ -10,11 +12,13 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog *dog;
 
-	(*dog).name = Edgard;
-	(*dog).owner = Javier;
-	(*dog).age = 3,5;
+	if (d != NULL)
+	{
 
-	return dog;
+		d->name = name;
+		d->owner = owner;
+		d->age = age;
+	}
+
 }
