@@ -48,8 +48,7 @@ char *_strdup(char *str)
 }
 
 /**
- * init_dog - check the code for Holberton School students.
- * @d: the dog structure defined before
+ * new_dog - check the code for Holberton School students.
  * @name: name of the owner
  * @owner: owner of the dog
  * @age: age of the dog
