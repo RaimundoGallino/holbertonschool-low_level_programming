@@ -6,7 +6,6 @@
  * print_dog - check the code for Holberton School students.
  * @d: the dog structure defined before
  *
- * Return: no return.
  */
 
 void print_dog(struct dog *d)
