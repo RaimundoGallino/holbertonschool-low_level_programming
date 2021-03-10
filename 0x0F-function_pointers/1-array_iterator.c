@@ -2,8 +2,9 @@
 #include <stddef.h>
 #include "function_pointers.h"
 /**
- * void array_iterator - print a name in uppercase
+ * array_iterator - iterates over the array given
  * @size: size of the array
+ * @array: array given
  * @action: pointer to the function
  * Return: Nothing.
  */

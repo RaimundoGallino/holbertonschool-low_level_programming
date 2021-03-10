@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "function_pointers.h"
 /**
- * print_name_uppercase - print a name in uppercase
- * @name: name of the person
- *
+ * print_name - holds the string given and passes it to the function (*name)
+ * @name: name given
+ * @f: function to be called
  * Return: Nothing.
  */
 void print_name(char *name, void (*f)(char *))

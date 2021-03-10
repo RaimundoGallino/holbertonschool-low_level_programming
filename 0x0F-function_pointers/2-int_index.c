@@ -2,10 +2,12 @@
 #include <stddef.h>
 #include "function_pointers.h"
 /**
- * void array_iterator - print a name in uppercase
+ * int_index - searches for an integer
  * @size: size of the array
- * @action: pointer to the function
- * Return: Nothing.
+ * @array: the array of integers given
+ * @cmp: funtion to be called
+ *
+ * Return: the index value and -1 if it fails
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
