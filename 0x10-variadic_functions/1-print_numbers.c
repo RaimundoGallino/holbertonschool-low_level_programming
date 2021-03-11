@@ -7,7 +7,7 @@
  * print_numbers - print the numbers given
  * @n: numbers of integers to enter
  * @separator:
- * Return: sum.
+ *
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -25,7 +25,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		if (separator != NULL && i != (n - 1))
 			printf("%s", separator);
 	}
-	putchar(10);
+	printf("\n");
 	va_end(ap);
 
 }
