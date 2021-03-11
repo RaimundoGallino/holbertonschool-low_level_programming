@@ -4,16 +4,16 @@
 #include <stdlib.h>
 
 /**
- * print_numbers - print the numbers given
+ * print_string - print the strings given
  * @n: numbers of integers to enter
- * @separator:
+ * @separator:the separators of the string
  *
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i = 0;
 
-	char * string;
+	char *string;
 
 	va_list ap;
 
