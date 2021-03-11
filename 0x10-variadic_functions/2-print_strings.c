@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * print_string - print the strings given
+ * print_strings - print the strings given
  * @n: numbers of integers to enter
  * @separator:the separators of the string
  *
