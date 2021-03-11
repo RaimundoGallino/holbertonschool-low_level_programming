@@ -1,5 +1,5 @@
 #include "3-calc.h"
-
+#include <stdlib.h>
 /**
  * get_op_func - cheks the op passed
  * @s: check for the operator
@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 
 	i = 0;
 
-	while (ops[i] != NULL)
+	while (ops[i].op)
 	{
 		if (*s == *ops[i].op)
 
