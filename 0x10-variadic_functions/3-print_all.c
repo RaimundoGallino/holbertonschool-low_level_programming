@@ -27,7 +27,7 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 
-	while (format[i])
+	while (format[i] && format != '\0')
 	{
 		j = 0;
 		while (arr[j].c)
@@ -48,7 +48,7 @@ void print_all(const char * const format, ...)
 
 /**
  * print_c - print with format char.
- * @c: char to print.
+ * @ap: char to print.
  **/
 
 void print_c(va_list ap)
@@ -58,7 +58,7 @@ void print_c(va_list ap)
 
 /**
  * print_i - print with format int.
- * @i: int to print.
+ * @ap: int to print.
  **/
 
 void print_i(va_list ap)
@@ -68,7 +68,7 @@ void print_i(va_list ap)
 
 /**
  * print_f - print with format float.
- * @f: float to print.
+ * @ap: float to print.
  **/
 
 void print_f(va_list ap)
@@ -78,7 +78,7 @@ void print_f(va_list ap)
 
 /**
  * print_s - print with format string.
- * @s: string to print.
+ * @ap: string to print.
  **/
 
 void print_s(va_list ap)
