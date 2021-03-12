@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 	while (format[i] && format != '\0')
 	{
 		j = 0;
-		while (arr[j].c)
+		while (arr[j].c != NULL)
 		{
 			if (format[i] == arr[j].c[0])
 			{
