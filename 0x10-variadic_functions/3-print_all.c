@@ -5,17 +5,16 @@
 
 /**
  * print_all - print the numbers given
- * @n: numbers of integers to enter
+ *
  * @format:
  *
  */
 void print_all(const char * const format, ...)
 {
-	typedef struct dt
-	{
-		char *c;
-		void (*f)(char*);
-	} dt_f;
+
+	va_list ap;
+	int i = 0, j;
+	char *spr = "";
 
 	dt_f arr[] = {
 		{"c", print_c},
@@ -25,37 +24,68 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 
-	int i = 0, j = 0;
-
-	va_list ap;
 
 	va_start(ap, format);
 
-
-	while (i )
+	while (format[i])
 	{
-		while (arr[i].c)
+		j = 0;
+		while (arr[j].c)
 		{
-			
+			if (format[i] == arr[j].c[0])
+			{
+				printf("%s", spr);
+				arr[j].f(ap);
+				spr = ", ";
+			}
+			j++;
 		}
+		i++;
 	}
+	printf("\n");
+	va_end(ap);
 }
+
+/**
+ * print_c - print with format char.
+ * @c: char to print.
+ **/
+
 void print_c(va_list ap)
 {
-	printf("%c", va_arg(ap, char));
+	printf("%c", va_arg(ap, int));
 }
+
+/**
+ * print_i - print with format int.
+ * @i: int to print.
+ **/
 
 void print_i(va_list ap)
 {
 	printf("%i", va_arg(ap, int));
 }
 
+/**
+ * print_f - print with format float.
+ * @f: float to print.
+ **/
+
 void print_f(va_list ap)
 {
-	printf("%f", va_arg(ap, float));
+	printf("%f", va_arg(ap, double));
 }
+
+/**
+ * print_s - print with format string.
+ * @s: string to print.
+ **/
 
 void print_s(va_list ap)
 {
-        printf("%s", va_arg(ap, char*));
+	char *str = va_arg(ap, char *);
+
+	if (str == NULL)
+		str = "(nil)";
+	printf("%s", str);
 }
