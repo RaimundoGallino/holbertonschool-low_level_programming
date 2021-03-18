@@ -8,7 +8,7 @@
  * @s: string to check
  * Return: Always 0.
  */
-int _strlen_recursion(char *s)
+int _strlen_recursion(const char *s)
 {
 	if (*s == '\0')
 	{
