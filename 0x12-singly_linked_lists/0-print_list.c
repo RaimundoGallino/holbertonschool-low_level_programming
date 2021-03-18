@@ -8,7 +8,7 @@ size_t print_list(const list_t *h)
 
 	if (h)
 	{
-		while (h)
+		while (h->next)
 		{
 			if (h->next != NULL)
 			{
@@ -26,7 +26,6 @@ size_t print_list(const list_t *h)
 		}
 		
 		printf("[%i]", 0);
-
 		
 	}
 	else
