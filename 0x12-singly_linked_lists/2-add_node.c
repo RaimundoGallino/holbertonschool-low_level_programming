@@ -40,12 +40,12 @@ list_t *add_node(list_t **head, const char *str)
         {
                 free(new);
         }
-        
+
         new->len = _strlen_recursion(str);
-        new->next = head;
+        new->next = *head;
 
-        head = new;
+        *head = new;
 
-
+        return (new);
 
 }
