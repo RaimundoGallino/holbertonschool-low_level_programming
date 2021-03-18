@@ -18,11 +18,7 @@ size_t print_list(const list_t *h)
 
 			contador += 1;
 
-		
-			if (h->next != NULL)
-			{
-				h = h->next;
-			}
+			h = h->next;
 		}
 
 	return(contador);
