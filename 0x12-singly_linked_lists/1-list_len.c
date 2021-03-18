@@ -2,14 +2,14 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * print_list - check the code for Holberton School students.
+ * list_len - check the code for Holberton School students.
  * @h:pointer to the headof the list
  * Return: Always 0.
  */
 size_t list_len(const list_t *h)
 {
 	size_t contador = 0;
-	
+
 	if (h)
 	{
 		while (h)
@@ -20,7 +20,7 @@ size_t list_len(const list_t *h)
 			h = h->next;
 		}
 }
-	
+
 
 	return (contador);
 }
