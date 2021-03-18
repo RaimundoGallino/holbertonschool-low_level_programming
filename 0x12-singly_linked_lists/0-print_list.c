@@ -6,16 +6,15 @@ size_t print_list(const list_t *h)
 {
 	size_t contador = 0;
 
-	if (h)
-	{
-		while (h->next)
+	
+		while (h)
 		{
 			if (h->next != NULL)
 			{
 
 				if (h->str == NULL)
 				{
-					printf("(nill)");
+					printf("[0] (nill)\n");
 				}
 				printf("[%i] %s\n", h->len, h->str);
 
@@ -24,14 +23,7 @@ size_t print_list(const list_t *h)
 			
 			h = h->next;
 		}
-		
-		printf("[%i]", 0);
-		
-	}
-	else
-	{
-		return (contador);
-	}
+
 	return(contador);
 	
 }
