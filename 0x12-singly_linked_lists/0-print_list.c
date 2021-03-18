@@ -23,11 +23,12 @@ size_t print_list(const list_t *h)
 		
 		printf("[%i]", 0);
 		printf("%s", (nil));
-		return(contador);
+		
 	}
 	else
 	{
 		return (contador);
 	}
+	return(contador);
 	
 }
