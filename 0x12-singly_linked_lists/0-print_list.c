@@ -5,20 +5,24 @@
 size_t print_list(const list_t *h)
 {
 	const list_t *contador = h;
-
-	next = NULL;
-
 	if (h)
 	{
 		while (contador->next)
 		{
-			contador = contador->next;
-			
-			if (str == NULL)
+		contador = contador->next;
+
+			if (contador->next != NULL)
 			{
-				printf ("%s", [0] (nil));
+				printf("[%i]", contador->len);
+				printf("%s", contador->str);
 			}
-			printf("%s", str);
+			else
+			{	
+				printf("[%i]", 0);
+				printf("[%s]", (nil));
+			}
+
 		}
 	}
+	
 }
