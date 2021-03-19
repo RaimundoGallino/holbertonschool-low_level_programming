@@ -28,9 +28,10 @@ int _strlen_recursion(const char *s)
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new,*temp;
+	list_t *new;
+	list_t *temp;
 
-	*temp = head;
+	temp = *head;
 
 	new = malloc(sizeof(list_t));
 
@@ -43,13 +44,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	if (new->str == NULL)
 	{
 		free(new);
+		return(NULL);
 	}
 
 	new->len = _strlen_recursion(str);
 	new->next = NULL;
 
-        if (temp != NULL)
-        {
+	if (temp != NULL)
+	{
 		while (temp->next)
 		{
 			temp = temp->next;
