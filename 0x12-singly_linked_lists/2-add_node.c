@@ -20,33 +20,34 @@ int _strlen_recursion(const char *s)
 
 /**
  * add_node - check the code for Holberton School students.
- * @h:pointer to the headof the list
- * Return: Always 0.
+ * @str:pointer to the string that contains the string
+ * @head:pointer to the head of the list
+ * Return: new.
  */
 
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
 
-        new = malloc(sizeof(list_t));
+	new = malloc(sizeof(list_t));
 
-        if (new == NULL)
-        {
-                return (NULL);
-        }
+	if (new == NULL)
+	{
+		return (NULL);
+	}
 
 
-        new->str = strdup(str);
-        if (new->str == NULL)
-        {
-                free(new);
-        }
+	new->str = strdup(str);
+	if (new->str == NULL)
+	{
+		free(new);
+	}
 
-        new->len = _strlen_recursion(str);
-        new->next = *head;
+	new->len = _strlen_recursion(str);
+	new->next = *head;
 
-        *head = new;
+	*head = new;
 
-        return (new);
+	return (new);
 
 }
