@@ -3,11 +3,10 @@
 #include <stdio.h>
 #include <stddef.h>
 /**
- * get_nodeint_at_index - gets the node at the index position
+ * sum_listint - gets the node at the index position
  * and return the value
  *
  * @head:pointer to the head of the list
- * @index:
  * Return: no return.
  */
 int sum_listint(listint_t *head)
