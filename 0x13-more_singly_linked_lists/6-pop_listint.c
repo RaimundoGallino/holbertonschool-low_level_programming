@@ -14,7 +14,7 @@ int pop_listint(listint_t **head)
 	listint_t *node = *head;
 
 	*head = node->next;
-	if (!*head)
+	if (!head)
 	{
 		free(node);
 	}
