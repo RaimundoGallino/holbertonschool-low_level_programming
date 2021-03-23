@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * print_list - check the code for Holberton School students.
- * @h:pointer to the headof the list
+ * print_list - prints all the elements of a list
+ * @h:pointer to the head of the list
  * Return: Always 0.
  */
 size_t print_listint(const listint_t *h)
