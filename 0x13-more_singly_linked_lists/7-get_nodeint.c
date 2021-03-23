@@ -7,7 +7,7 @@
  * and return the value
  *
  * @head:pointer to the head of the list
- * @index:
+ * @index: index number of the node
  * Return: no return.
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
