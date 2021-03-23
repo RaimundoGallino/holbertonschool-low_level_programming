@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint_at_index - adds a new node at the index number of the list.
+ * insert_nodeint_at_index - adds a new node at the index number of the list.
  * @n:integer value of the list
  * @head:pointer to the head of the list
  * @idx: index number to add the new node
@@ -28,10 +28,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	prev = NULL;
 
-	curr = *head;
-
 	/* find the place to insert */
-	for (;curr != NULL; curr = curr->next, i += 1)
+	for (curr = *head; curr != NULL; curr = curr->next, i += 1)
 	{
 		if (i >= idx)
 			break;
