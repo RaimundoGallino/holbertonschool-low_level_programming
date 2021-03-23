@@ -35,6 +35,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			break;
 		prev = curr;
 	}
+	if (idx > i && curr == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
 
 	/* set the ponter of the new node to the one that was on that position*/
 	new->next = curr;
