@@ -10,13 +10,14 @@
  */
 int pop_listint(listint_t **head)
 {
-	int temp = (*head)->n;
+	int temp;
 	listint_t *node = *head;
 
-	if (!head)
+	if (!*head)
 	{
 		return (0);
 	}
+	temp = (*head)->n;
 
 	*head = node->next;
 
