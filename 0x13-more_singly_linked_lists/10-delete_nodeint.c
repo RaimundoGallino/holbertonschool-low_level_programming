@@ -4,11 +4,10 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - adds a new node at the index number of the list.
- * @n:integer value of the list
+ * delete_nodeint_at_index - adds a new node at the index number of the list.
  * @head:pointer to the head of the list
- * @idx: index number to add the new node
- * Return: new node.
+ * @index: index number to add the new node
+ * Return: 1 if it succeeded, -1 if it failed.
  */
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
@@ -16,7 +15,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *curr;
 	listint_t *aux;
 	unsigned int i = 0;
-
 
 	if (!*head)
 	{
@@ -33,7 +31,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 
 	/* find the place to free */
-	for (; curr != NULL && i < index - 1; curr = curr->next, i += 1);
+	for (; curr != NULL && i < index - 1; i += 1)
+		curr = curr->next;
 
 	if (index - 1 == i && curr->next != NULL)
 	{
@@ -42,7 +41,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(aux);
 		return (1);
 	}
-
 
 	return (-1);
 
