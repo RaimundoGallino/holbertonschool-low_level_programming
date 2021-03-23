@@ -30,7 +30,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	curr = *head;
 
 	/* find the place to insert */
-	for (curr != NULL; curr = curr->next, i++)
+	for (curr != NULL; curr = curr->next, i += 1)
 	{
 		if (i >= idx)
 			break;
