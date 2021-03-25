@@ -27,6 +27,9 @@ unsigned int binary_to_uint(const char *b)
 {
 	int dec = 0, tab = 1, lenb, i;
 
+	if (b == NULL)
+		return (0);
+
 	lenb = _strlen_recursion(b);
 
 	for (i = lenb; i > 0; i--)
