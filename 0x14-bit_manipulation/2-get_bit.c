@@ -2,7 +2,8 @@
 
 /**
  * get_bit - converts binary to unsigned int
- * @b: binary numbers passed by a string
+ * @n: unsigned long int
+ * @index: index of the bit you want to get
  * Return: unsigned int
  */
 int get_bit(unsigned long int n, unsigned int index)
