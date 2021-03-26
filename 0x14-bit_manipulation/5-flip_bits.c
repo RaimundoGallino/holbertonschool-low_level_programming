@@ -3,7 +3,7 @@
 /**
  * flip_bits - converts binary to unsigned int
  * @n: unsigned long int
- * @index: index of the bit you want to get
+ * @m: index of the bit you want to get
  * Return: unsigned int
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
