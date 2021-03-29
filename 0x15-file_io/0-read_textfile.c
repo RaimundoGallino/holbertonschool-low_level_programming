@@ -16,7 +16,6 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
-	ssize_t imp;
 	ssize_t ret;
 	char *buf;
 
@@ -35,7 +34,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buf);
 		return (0);
 	}
-	imp = read(fd, buf, letters);
+	read(fd, buf, letters);
 	ret = write(1, buf, letters);
 
 
