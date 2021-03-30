@@ -42,10 +42,23 @@ int main(int ac, char **av)
 
 	w = write(fd2, buff, r);
 
-	if (w == -1)
-		return (-1);
+	if (w == -1 || r == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av[2]);
+		exit(99);
+	}
 
 	close(fd1);
+	if (close(fd1) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd1);
+		exit(100);
+	}
 	close(fd2);
+	if (close(fd2) == -1)
+	{
+                dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd2);
+		exit(100);
+	}
 	return (0);
 }
