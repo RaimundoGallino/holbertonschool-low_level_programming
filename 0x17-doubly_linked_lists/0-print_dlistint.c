@@ -1,5 +1,9 @@
 #include "lists.h"
-
+/**
+ * print_dlistint- prints the data of all the nodes in the list
+ *
+ * Return: no Return
+ */
 size_t print_dlistint(const dlistint_t *h)
 {
     const dlistint_t *current;
