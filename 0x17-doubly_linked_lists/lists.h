@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <string.h>
 
-size_t print_dlistint(const dlistint_t *h);
 
 /**
  * struct dlistint_s - doubly linked list
