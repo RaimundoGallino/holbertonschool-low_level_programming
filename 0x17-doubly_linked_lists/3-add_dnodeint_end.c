@@ -26,15 +26,11 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
         temp->prev = NULL;  
         tail->next = NULL;  
     }  
-    //Add newNode as new tail of the list  
     else {  
-        //newNode will be added after tail such that tail's next will point to newNode  
+       
         tail->next = new;  
-        //newNode's previous will point to tail  
         new->prev = tail;  
-        //newNode will become new tail  
-        tail = new;  
-        //As it is last node, tail's next will point to NULL  
+        tail = new;    
         tail->next = NULL;  
     }  
 	return (new);
