@@ -3,11 +3,12 @@
  * insert_dnodeint_at_index - adds a node to the index position given
  * @h: double pointer to the list
  * @idx: index number of the node
+ * @n: data value of the inserted new node
  * Return: new node
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-    dlistint_t *new;
+	dlistint_t *new;
 	dlistint_t *curr;
 	unsigned int i = 0;
 
@@ -15,11 +16,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (new == NULL)
 		return (NULL);
-	
-    new->n = n;
+
+	new->n = n;
 	new->prev = NULL;
 
-	/* find the place to insert */
 	for (curr = *h; curr != NULL; curr = curr->next, i += 1)
 	{
 		if (i >= idx)
@@ -31,12 +31,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		free(new);
 		return (NULL);
 	}
-	/* set the ponter of the new node to the one that was on that position*/
+
 	new->next = curr;
-	/* insert the new node in the position or end of the list */
 	if (new->prev != NULL)
 		new->prev->next = new;
-        
+
 	else
 		*h = new;
 
