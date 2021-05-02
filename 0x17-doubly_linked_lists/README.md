@@ -1,1 +1,1 @@
-This foulder contains all the tasks related to doble linked lists
+This folder contains all the tasks related to doble linked lists
