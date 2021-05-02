@@ -1,11 +1,10 @@
 #include "lists.h"
-
 /**
- * insert_dnodeint_at_index- adds a node to the beginning.
- *
- * Return: no Return
+ * delete_dnodeint_at_index - frees a node at the index position
+ * @head: double pointer to the head of the list
+ * @index: index number of the node we want to free
+ * Return: 1 on success -1 if it fails
  */
-
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
     dlistint_t *curr;
@@ -27,7 +26,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		free(curr);
 		return (1);
 	}
-	/* find the place to free */
 	for (; curr != NULL && i < index - 1; i += 1)
 		curr = curr->next;
 

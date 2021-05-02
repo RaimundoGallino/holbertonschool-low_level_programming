@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * print_dlistint- prints the data of all the nodes in the list
- *
- * Return: no Return
+ * print_dlistint - prints the data value of all the nodes in the list
+ * @h: head of the list
+ * Return: the lenght of the list
  */
 size_t print_dlistint(const dlistint_t *h)
 {

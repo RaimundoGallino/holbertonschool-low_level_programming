@@ -1,11 +1,9 @@
 #include "lists.h"
-
 /**
- * free_dlistint- adds a node to the beginning.
- *
+ * free_dlistint - frees the list.
+ * @head: head of the list
  * Return: no Return
  */
-
 void free_dlistint(dlistint_t *head)
 {
     dlistint_t *temp;
