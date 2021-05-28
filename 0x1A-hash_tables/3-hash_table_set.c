@@ -15,10 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	const char *val = strdup(value);
 	unsigned long int index;
 
-	if (!ht || !(*ht))
-		return (0);
-
-	if (value == NULL)
+	if (!ht || !ht->array || !value)
 		return (0);
 	if (key != NULL)
 	{
