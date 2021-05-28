@@ -1,15 +1,14 @@
 #include "hash_tables.h"
 /**
  * hash_table_get - implementation of the djb2 algorithm
- * @key: string used to generate hash value
  * @ht: hash table
+ * @key: string used to generate hash value
  *
  * Return: hash value
  */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-
 	hash_node_t *tmp;
 	unsigned long int index;
 
@@ -25,7 +24,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	{
 		if (strcmp(tmp->key, (char *)key) == 0)
 		{
-			return(tmp->value);
+			return (tmp->value);
 		}
         else
             return (NULL);
