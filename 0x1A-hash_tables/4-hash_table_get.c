@@ -26,9 +26,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		{
 			return (tmp->value);
 		}
-        else
-            return (NULL);
+		else
+			return (NULL);
 		tmp = tmp->next;
 	}
-    return (0);
+
+	return (0);
 }
