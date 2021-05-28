@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * hash_djb2 - implementation of the djb2 algorithm
+ * hash_table_set - implementation of the djb2 algorithm
  * @key: string used to generate hash value
  * @size: size of the list
  *
@@ -13,6 +13,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new_node;
 	const char *val = strdup(value);
 	unsigned long int index;
+
 	if (!ht || !*ht)
 		return (0);
 
