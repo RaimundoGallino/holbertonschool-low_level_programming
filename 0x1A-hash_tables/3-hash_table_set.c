@@ -37,15 +37,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (!new_node)
 		return (0);
 
-	new_node->key = malloc(strlen(key) + 1);
-	if (!new_node->key)
-		return (0);
-	new_node->value = malloc(strlen(value) + 1);
-	if (!new_node->value)
-		return (0);
-	
-	strcpy(new_node->key, key);
-	strcpy(new_node->value, value);
+	new_node->key = strdup(key);
+	new_node->value = strdup(value);
 
 	new_node->next = ht->array[index];
 	return (1);
