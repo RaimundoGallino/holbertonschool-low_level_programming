@@ -22,10 +22,10 @@ void hash_table_print(const hash_table_t *ht)
         while (tmp)
         {
             printf("'%s': '%s'",tmp->key, tmp->value);
-            tmp = tmp->next;
 
             if (tmp->next)
                 printf(",");
+            tmp = tmp->next;
         }
     }
     printf("}\n");
