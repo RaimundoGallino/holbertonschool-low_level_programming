@@ -3,6 +3,7 @@
  * hash_table_set - implementation of the djb2 algorithm
  * @key: string used to generate hash value
  * @size: size of the list
+ * @ht: hash table
  *
  * Return: hash value
  */
@@ -14,7 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	const char *val = strdup(value);
 	unsigned long int index;
 
-	if (!ht || !*ht)
+	if (!ht || !(*ht))
 		return (0);
 
 	if (value == NULL)
