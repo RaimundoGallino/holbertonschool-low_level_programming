@@ -2,7 +2,7 @@
 /**
  * hash_table_set - implementation of the djb2 algorithm
  * @key: string used to generate hash value
- * @size: size of the list
+ * @value: size of the list
  * @ht: hash table
  *
  * Return: hash value
