@@ -23,7 +23,7 @@ void hash_table_print(const hash_table_t *ht)
         {
             printf("'%s': '%s'",tmp->key, tmp->value);
 
-            if (i != (ht->size) -1)
+            if (i != (ht->size) - 2)
                 printf(", ");
             tmp = tmp->next;
         }
