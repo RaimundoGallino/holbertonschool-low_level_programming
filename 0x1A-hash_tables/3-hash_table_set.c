@@ -28,6 +28,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(tmp->key, key) == 0)
 		{
+			printf("%s\n",tmp->key);
 			strcpy(tmp->value, value);
 			return (1);
 		}
@@ -39,7 +40,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	strcpy(new_node->key, key);
 	strcpy(new_node->value, value);
 
-	printf("%s\n",new_node->key);
 	new_node->next = ht->array[index];
 	return (1);
 }
