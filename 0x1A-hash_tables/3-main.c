@@ -14,5 +14,10 @@ int main(void)
 
     ht = hash_table_create(1024);
     hash_table_set(ht, "betty", "holberton");
+    hash_table_set(ht, "betty", "fjbrweeage");
+
+    printf("%s\n", ht->array[173]->value);
+
     return (EXIT_SUCCESS);
 }
+
