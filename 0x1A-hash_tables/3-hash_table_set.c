@@ -30,6 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
         strcpy(new_node->value, val);
         strcpy(new_node->key, key);
         new_node->next = NULL;
+        
         return (1);
     }
     else
