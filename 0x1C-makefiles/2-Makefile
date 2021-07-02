@@ -4,4 +4,4 @@ OBJ=main.o
 NAME=holberton
 
 all: $(OBJ)
-	$(CC) $(SRC) -o $(NAME)
+		$(CC) $(SRC) -o $(NAME)
