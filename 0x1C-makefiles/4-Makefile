@@ -1,11 +1,12 @@
 CC=gcc
+CFLAGS=-Wall -Werror -Wextra -pedantic
 SRC=main.c holberton.c
 OBJ=$(SRC:.c=.o)
 NAME=holberton
 RM=rm
 
 all: $(OBJ)
-		$(CC) $(SRC) -o $(NAME)
+		$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 clean:
 		$(RM) -f *~
 oclean:
