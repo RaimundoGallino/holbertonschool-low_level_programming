@@ -4,17 +4,13 @@ SRC=main.c holberton.c
 OBJ=$(SRC:.c=.o)
 NAME=holberton
 
-.PHONY: all clean oclean fclean re
+.PHONY: clean oclean fclean re all
 
-all: m.h ${OBJ}
-	@${CC} ${OBJ} -o ${NAME}
-
+all: m.h $(OBJ)
+		$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 clean:
-	${RM} *~ ${NAME}
-
-oclean:
-	${RM} ${OBJ}
-
-fclean: clean oclean
-
-re: fclean all
+		$(RM) -f *~ $(NAME)
+oclean: $(OBJ)
+		$(RM) -f $(OBJ)
+fclean: oclean clean
+re: all oclean
