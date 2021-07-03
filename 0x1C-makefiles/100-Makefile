@@ -6,7 +6,7 @@ NAME=holberton
 RM=rm
 .PHONY: clean oclean fclean re all
 
-all: $(OBJ)
+all: m.h $(OBJ)
 		$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 clean:
 		$(RM) -f *~ $(NAME)
