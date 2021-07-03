@@ -8,9 +8,9 @@ RM=rm
 all: $(OBJ)
 		$(CC) $(CFLAGS) $(SRC) -o $(NAME)
 clean:
-		$(RM) -f *~
-oclean:
+		$(RM) -f *~ $(NAME)
+oclean: $(OBJ)
 		$(RM) -f $(OBJ)
-fclean:
+fclean: $(OBJ)
 		$(RM) -f *~ $(OBJ) $(NAME)
 re: all oclean
